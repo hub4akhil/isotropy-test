@@ -51,7 +51,7 @@ mpirun -np 8 python qstat_sim.py
 On clusters
 
 ```bash
-sbatch qstat_sim.py
+sbatch qstat_run_script.py
 ```
 
 ## Input Files
