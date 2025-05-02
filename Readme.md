@@ -27,10 +27,12 @@ The code uses `mpi4py` for distributed processing across multiple CPUs.
     - numpy
     - healpy
     - pandas
+    - lmfit
+    - scipy
 
 2. **Installation**:
     ```bash
-    pip install mpi4py numpy healpy pandas
+    pip install mpi4py numpy healpy pandas lmfit scipy
     ```
 
 3. **MPI Setup**:
