@@ -21,6 +21,18 @@ The code uses `mpi4py` for distributed processing across multiple CPUs.
 
 ## Installation
 
+The project uses the following Python packages:
+
+- `mpi4py`
+- `numpy`
+- `healpy`
+- `pandas`
+- `astropy`
+- `scipy`
+- `lmfit`
+
+All dependencies can be installed via `conda` using the instructions below.
+
 1. **Environment requirements**:
     - Python 3.8+
     - mpi4py
@@ -31,10 +43,17 @@ The code uses `mpi4py` for distributed processing across multiple CPUs.
     - scipy
 
 2. **Installation**:
-    ```bash
-    pip install mpi4py numpy healpy pandas lmfit scipy
-    ```
+    1. Create and activate the `isotropy` Conda environment
 
+    ```bash
+    conda create -n isotropy python=3.10 -y
+    conda activate isotropy
+    ```
+    2. Install packages
+    ```bash
+     conda install -c conda-forge mpi4py numpy healpy pandas astropy scipy lmfit
+    ```
+    
 3. **MPI Setup**:
     You must have an MPI implementation installed, e.g., `OpenMPI` or `MPICH`.
 
